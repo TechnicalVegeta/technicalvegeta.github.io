@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://technicalvegeta.github.io/hugo-gh-pages-public/categories/</loc>
+    <loc>https://blogs.decodegeek.co.in/categories/</loc>
   </url><url>
-    <loc>https://technicalvegeta.github.io/hugo-gh-pages-public/</loc>
+    <loc>https://blogs.decodegeek.co.in/</loc>
   </url><url>
-    <loc>https://technicalvegeta.github.io/hugo-gh-pages-public/tags/</loc>
+    <loc>https://blogs.decodegeek.co.in/tags/</loc>
   </url>
 </urlset>
