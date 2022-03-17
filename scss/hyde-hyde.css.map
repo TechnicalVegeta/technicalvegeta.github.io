@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "hyde-hyde.css",
-	"sourceRoot": "D:/GIT/github-blog/hugo-gh-pages-source",
+	"sourceRoot": "C:/Customs/GIT/github-blog/test/hugo-gh-pages-source",
 	"sources": [
 		"themes/hyde-hyde/assets/scss/hyde-hyde.scss",
 		"themes/hyde-hyde/assets/scss/hyde-hyde/_variables.scss",
