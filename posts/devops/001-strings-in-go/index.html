@@ -7,7 +7,7 @@
     <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     
-    <link rel="canonical" href="https://blogs.decodegeek.co.in/about/">
+    <link rel="canonical" href="https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/">
     
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,28 +19,23 @@
     
     
 
-<title>About • Learning &amp; Decoding Dev&amp;Ops</title>
+<title>Using String in Go • Learning &amp; Decoding Dev&amp;Ops</title>
 <meta name="description" content="Passing on my learnings about Programming on Go, Operations on Cloud, Microservice, and DevOps Automation, so you don&#39;t have to waste as many hours as I did trying to figure out how to make it work.">
 <meta name="keywords" content="Go, Powershell, Azure, Kubernetes, Docker, Rancher, k3d, Azure DevOps, k3s, Git, Terraform">
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="My name is Vivek and I currently live in Bengaluru working as a DevOps Consultant. In my own time and at work, I do some of the below:
- Write code [PowerShell, Python, Go, Terraform]."/>
+<meta name="twitter:title" content="Using String in Go"/>
+<meta name="twitter:description" content="Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it."/>
 
-<meta property="og:title" content="About" />
-<meta property="og:description" content="My name is Vivek and I currently live in Bengaluru working as a DevOps Consultant. In my own time and at work, I do some of the below:
- Write code [PowerShell, Python, Go, Terraform]." />
+<meta property="og:title" content="Using String in Go" />
+<meta property="og:description" content="Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blogs.decodegeek.co.in/about/" /><meta property="article:section" content="fixed" />
-<meta property="article:published_time" content="2021-11-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-11-18T00:00:00+00:00" /><meta property="og:site_name" content="Decode DevOps" />
+<meta property="og:url" content="https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/" /><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="Decode DevOps" />
 
 
 
     
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css">
 
 
 
@@ -187,16 +182,43 @@
     
 <article>
   <header>
-    <h1>About</h1>
+    <h1>Using String in Go</h1>
     
     
 <div class="post__meta">
     
     
-      <i class="fas fa-calendar-alt"></i> Nov 18, 2021
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/golang">GOLANG</a>
+              
+          
+      
     
     
     
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/programming">programming</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/go">go</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/strings">strings</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/golang">golang</a>
+          
+      
     
     
     <br/>
@@ -208,27 +230,33 @@
   
   
   
+    <div class="toc-wrapper">
+      <input type="checkbox" id="tocToggle">
+      <label for="tocToggle">Table of Content</label>
+      
+          <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#background-">Background 🧐</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      
+    </div>
+  
   
   <div class="post">
-    <p>My name is <code>Vivek</code> and I currently live in Bengaluru working as a DevOps Consultant. In my own time and at work, I do some of the below:</p>
-<ul>
-<li>Write code <code>[PowerShell, Python, Go, Terraform]</code>.</li>
-<li>Learning &amp; Exploring on <code>[Microservice, Kubernetes]</code>.</li>
-<li>Work on Multicloud Platform <code>[Azure, GCP]</code>.</li>
-<li>Work on DevOps tools <code>[AzureDevOps, GitHub, Jenkins]</code>.</li>
-<li>Work on Application Build/Release/Deploy.</li>
-</ul>
-<p>I am trying to learn more and contribute to the community</p>
+    <h3 id="background-">Background 🧐</h3>
+<p>Go includes strings as a builtin type. The zero value for a string is the empty string.
+Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it.
+As i have observed most of its characteristics are inherited from C.</p>
 
   </div>
   
 
 <div class="navigation navigation-single">
-    
-    <a href="/subscribe/" class="navigation-prev">
-      <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Subscribe</span>
-    </a>
     
     
 </div>
@@ -277,15 +305,6 @@ if (!doNotTrack) {
 
 <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
 
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-        
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
 
 
 

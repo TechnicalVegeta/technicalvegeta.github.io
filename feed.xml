@@ -27,12 +27,12 @@
     </item>
     
     <item>
-      <title>#1 Sample Post</title>
-      <link>https://blogs.decodegeek.co.in/posts/devops/samle/</link>
-      <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
+      <title>Using String in Go</title>
+      <link>https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/devops/samle/</guid>
-      <description></description>
+      <guid>https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/</guid>
+      <description>Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it.</description>
     </item>
     
   </channel>
