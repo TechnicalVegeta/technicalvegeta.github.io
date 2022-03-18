@@ -19,14 +19,14 @@
     
     
 
-<title>Using String in Go • Learning &amp; Decoding Dev&amp;Ops</title>
+<title>Tips: Using String better way in Go • Learning &amp; Decoding Dev&amp;Ops</title>
 <meta name="description" content="Passing on my learnings about Programming on Go, Operations on Cloud, Microservice, and DevOps Automation, so you don&#39;t have to waste as many hours as I did trying to figure out how to make it work.">
 <meta name="keywords" content="Go, Powershell, Azure, Kubernetes, Docker, Rancher, k3d, Azure DevOps, k3s, Git, Terraform">
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Using String in Go"/>
+<meta name="twitter:title" content="Tips: Using String better way in Go"/>
 <meta name="twitter:description" content="Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it."/>
 
-<meta property="og:title" content="Using String in Go" />
+<meta property="og:title" content="Tips: Using String better way in Go" />
 <meta property="og:description" content="Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/" /><meta property="article:section" content="posts" />
@@ -44,7 +44,7 @@
 
 
 
-<link rel="stylesheet" href="/scss/hyde-hyde.bc49f7d09ec3668773edfcc5ee08b0f63092ce067872f65779f8dcecbfe6f984.css" integrity="sha256-vEn30J7DZodz7fzF7giw9jCSzgZ4cvZXefjc7L/m&#43;YQ=">
+<link rel="stylesheet" href="/scss/hyde-hyde.a0121b785f8f8409e01610009d7ad2f1a9680e3059165909c5cb54221967f160.css" integrity="sha256-oBIbeF&#43;PhAngFhAAnXrS8aloDjBZFlkJxctUIhln8WA=">
 
 
 <link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
@@ -182,7 +182,7 @@
     
 <article>
   <header>
-    <h1>Using String in Go</h1>
+    <h1>Tips: Using String better way in Go</h1>
     
     
 <div class="post__meta">
@@ -224,7 +224,7 @@
     
     
     <br/>
-    <i class="fas fa-clock"></i> 1 min read
+    <i class="fas fa-clock"></i> 2 min read
 </div>
 
 
@@ -241,6 +241,10 @@
     <li>
       <ul>
         <li><a href="#background-">Background 🧐</a></li>
+        <li><a href="#multiline-strings-in-go">Multiline strings in Go</a></li>
+        <li><a href="#concatenate-strings-in-go">Concatenate Strings in Go</a></li>
+        <li><a href="#strings-conversion-in-go">Strings Conversion in Go</a></li>
+        <li><a href="#strings-to-byte-slices-in-go">Strings to byte slices in Go</a></li>
       </ul>
     </li>
   </ul>
@@ -254,6 +258,81 @@
 <p>Go includes strings as a builtin type. The zero value for a string is the empty string.
 Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it.
 As i have observed most of its characteristics are inherited from C.</p>
+<h3 id="multiline-strings-in-go">Multiline strings in Go</h3>
+<p>If you are like me, you will want to know how to create multi-line strings pretty quickly for one reason or another 😁</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`This is a
+</span><span style="color:#e6db74">multiline
+</span><span style="color:#e6db74">string introduction for go strings.`</span>
+</code></pre></div><h3 id="concatenate-strings-in-go">Concatenate Strings in Go</h3>
+<p>While you can concatenate strings with the + operator, and this works file</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;vivek&#34;</span>
+<span style="color:#a6e22e">str</span> = <span style="color:#a6e22e">str</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;sheshadri&#34;</span>
+</code></pre></div><p>it is more efficient to use something like a bytes.Buffer or a strings.Builder rather than the above use case and this is more efficient if you are combining Lots of strings</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sb</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Builder</span>
+<span style="color:#a6e22e">sb</span>.<span style="color:#a6e22e">WriteString</span>(<span style="color:#e6db74">&#34;vivek&#34;</span>)
+<span style="color:#a6e22e">sb</span>.<span style="color:#a6e22e">WriteString</span>(<span style="color:#e6db74">&#34;sheshadri&#34;</span>)
+</code></pre></div><h5 id="complete-code">complete code</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> (
+	<span style="color:#e6db74">&#34;fmt&#34;</span>
+	<span style="color:#e6db74">&#34;strings&#34;</span>
+)
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sb</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">Builder</span>
+	<span style="color:#a6e22e">sb</span>.<span style="color:#a6e22e">WriteString</span>(<span style="color:#e6db74">&#34;vivek&#34;</span>)
+	<span style="color:#a6e22e">sb</span>.<span style="color:#a6e22e">WriteString</span>(<span style="color:#e6db74">&#34;sheshadri&#34;</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">sb</span>.<span style="color:#a6e22e">String</span>())
+}
+</code></pre></div><p>Outputs: &ldquo;viveksheshadri&rdquo; .</p>
+<h3 id="strings-conversion-in-go">Strings Conversion in Go</h3>
+<p>In Go, You can&rsquo;t simply cast a number to a string and it does NOT work as you may expect</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">number</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">728</span>
+	<span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> string(<span style="color:#a6e22e">number</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">str</span>)
+}
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">Outputs</span>: {
+<span style="color:#a6e22e">Program</span> <span style="color:#a6e22e">exited</span>.
+</code></pre></div><p>Most notably from above exmaple, simply writing string(728) won&rsquo;t work as you expected and the result will NOT be &ldquo;728&rdquo;</p>
+<h4 id="solution">Solution:</h4>
+<p>To convert a number to string, Go has defined function strconv.Itoa or fmt.sprintf as below.</p>
+<ol>
+<li>Using function strconv.Itoa</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">number</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">728</span>
+<span style="color:#a6e22e">strConv</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strconv</span>.<span style="color:#a6e22e">Itoa</span>(<span style="color:#a6e22e">number</span>)
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">strConv</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">Outputs</span>: <span style="color:#ae81ff">728</span>
+</code></pre></div><ol start="2">
+<li>Using function fmt.sprintf</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">number</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">234</span>
+<span style="color:#a6e22e">strB</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#a6e22e">number</span>)
+<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">strB</span>)
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">Outputs</span>: <span style="color:#ae81ff">234</span>
+</code></pre></div><h3 id="strings-to-byte-slices-in-go">Strings to byte slices in Go</h3>
+<p>In many languages functions will only accepts a string or a byte slice, and converting them back and forth can be tricky.
+but in Go strings can be converted into byte slices, and byte slices can be converted into strings, will see how with an example below.</p>
+<ol>
+<li>Converting string to a byte slice</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">byt</span> []<span style="color:#66d9ef">byte</span>
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+	<span style="color:#a6e22e">str</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;a string&#34;</span>
+	<span style="color:#a6e22e">byt</span> = []byte(<span style="color:#a6e22e">str</span>)
+	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">byt</span>)
+}
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">Outputs</span>: [<span style="color:#ae81ff">97</span> <span style="color:#ae81ff">32</span> <span style="color:#ae81ff">115</span> <span style="color:#ae81ff">116</span> <span style="color:#ae81ff">114</span> <span style="color:#ae81ff">105</span> <span style="color:#ae81ff">110</span> <span style="color:#ae81ff">103</span>]
+</code></pre></div><ol start="2">
+<li>To converting back the above byte slice value to a string</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">str</span> <span style="color:#66d9ef">string</span>
+<span style="color:#a6e22e">str</span> = string(<span style="color:#a6e22e">byt</span>)
+</code></pre></div><p>Hope these tips help you out in writing more efficient Go, I will post more topics tricks and tips on Go in my next article.</p>
 
   </div>
   
