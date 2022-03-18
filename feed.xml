@@ -6,7 +6,7 @@
     <description>Recent content on Learning &amp; Decoding Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 18 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://blogs.decodegeek.co.in/about/</link>
@@ -29,7 +29,7 @@
     <item>
       <title>Using String in Go</title>
       <link>https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/</guid>
       <description>Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it.</description>
