@@ -9,7 +9,40 @@
     <lastmod>2021-11-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blogs.decodegeek.co.in/categories/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/containerisation/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/k3d/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/k3s/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/k8s/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/kubernetes/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/categories/kubernetes/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/posts/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/production-k3d/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/posts/devops/002-prod-grade-k8s-inlocal/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blogs.decodegeek.co.in/tags/</loc>
+    <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blogs.decodegeek.co.in/tags/go/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
@@ -20,19 +53,10 @@
     <loc>https://blogs.decodegeek.co.in/tags/golang/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blogs.decodegeek.co.in/tags/programming/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blogs.decodegeek.co.in/tags/strings/</loc>
-    <lastmod>2022-03-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blogs.decodegeek.co.in/posts/devops/001-strings-in-go/</loc>
