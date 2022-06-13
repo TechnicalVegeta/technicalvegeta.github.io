@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
     
+    
+
+
     <head>
     <link href="https://gmpg.org/xfn/11" rel="profile">
     
-    <link rel="canonical" href="https://blogs.decodegeek.co.in/tags/containerisation/">
+    <link rel="canonical" href="https://blogs.decodegeek.co.in/posts/infra/k8s-1-prod-grade-k8s-inlocal/">
     
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,17 +19,19 @@
     
     
 
-<title>containerisation • Learning &amp; Sharing Dev&amp;Ops</title>
+<title>Setup Prod-Grade kubernets in your local • Learning &amp; Sharing Dev&amp;Ops</title>
 <meta name="description" content="Passing on my learnings about Programming on Go, Operations on Cloud, Microservice, and DevOps Automation, so you don&#39;t have to waste as many hours as I did trying to figure out how to make it work.">
 <meta name="keywords" content="Go, Powershell, Azure, Kubernetes, Docker, Rancher, k3d, Azure DevOps, k3s, Git, Terraform">
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="containerisation"/>
-<meta name="twitter:description" content="Knowledge share on Dev, Ops, &amp; Code."/>
+<meta name="twitter:title" content="Setup Prod-Grade kubernets in your local"/>
+<meta name="twitter:description" content="Background 🧐 k8s"/>
 
-<meta property="og:title" content="containerisation" />
-<meta property="og:description" content="Knowledge share on Dev, Ops, &amp; Code." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blogs.decodegeek.co.in/tags/containerisation/" /><meta property="og:site_name" content="Decode DevOps" />
+<meta property="og:title" content="Setup Prod-Grade kubernets in your local" />
+<meta property="og:description" content="Background 🧐 k8s" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blogs.decodegeek.co.in/posts/infra/k8s-1-prod-grade-k8s-inlocal/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-19T00:00:00+00:00" /><meta property="og:site_name" content="Decode DevOps" />
 
 
 
@@ -62,8 +67,7 @@
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="/favicon.png">
-    <link rel="alternate" type="application/rss+xml" href="https://blogs.decodegeek.co.in/tags/containerisation/feed.xml" title="Learning & Sharing Dev&Ops" />
-
+    
     
 
     
@@ -200,27 +204,132 @@ if (!doNotTrack) {
 
         <div class="content container">
             
-    <span class="section__title">containerisation</span>
-<ul class="posts">
     
-        
-<li>
-  <span class="list__title--small">
-    <a href="/posts/infra/k8s-1-prod-grade-k8s-inlocal/" >Setup Prod-Grade kubernets in your local</a>
+<article>
+  <header>
+    <h1>Setup Prod-Grade kubernets in your local</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Mar 19, 2022
+    
+    
+    
       
-      <time class="pull-right hidden-tablet">Mar 19, 2022</time>
       
-  </span>
-</li>
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/kubernetes">KUBERNETES</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/kubernetes">kubernetes</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/containerisation">containerisation</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/k8s">k8s</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/k3d">k3d</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/k3s">k3s</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/production-k3d">production k3d</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
 
 
+  </header>
+  
+  
+  
+    <div class="toc-wrapper">
+      <input type="checkbox" id="tocToggle">
+      <label for="tocToggle">Table of Content</label>
+      
+          <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#background-">Background 🧐</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      
+    </div>
+  
+  
+  <div class="post">
+    <h3 id="background-">Background 🧐</h3>
+<p>k8s</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
     
-</ul>
+    <a href="/posts/code/go-1-strings-in-go/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Tips: Using String better way in Go</span>
+    </a>
+    
+    
+    <a href="/posts/code/go-2-third-party-go-tools/" class="navigation-next">
+      <span class="navigation-tittle">Tips: Using Third-Paty Tools for betterment of Go</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+
+
+
+  
+    
+        <div id="graphcomment"></div>
+<script type="text/javascript">
+  window.graphcomment_id = 'Decode-DevOps';
+   
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+</script>
+    
+
+
+</article>
 
 
         </div>
         
     
+
   
   
 <script type="application/javascript">
@@ -236,6 +345,22 @@ if (!doNotTrack) {
 
 
 <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+        
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+
+    
 
 
 
