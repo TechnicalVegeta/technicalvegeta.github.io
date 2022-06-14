@@ -6,22 +6,31 @@
     <description>Recent content in golang on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/tags/golang/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/tags/golang/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Tips: Using Third-Paty Tools for betterment of Go</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/go-2-third-party-go-tools/</link>
+      <title>Go to Automate and Integrate tools with Build</title>
+      <link>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</link>
+      <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</guid>
+      <description>1️⃣ Background Modern software development relies on repeatable, automatable builds that can be run by anyone, anywhere, at any time. This avoids the age-old developer excuse of “It works on my machine!</description>
+    </item>
+    
+    <item>
+      <title>Golang Tips2: Using Third-Paty Tools for betterment of Go</title>
+      <link>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/go-2-third-party-go-tools/</guid>
+      <guid>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</guid>
       <description>1️⃣ Background While some people choose to distribute their Go programs as pre-compiled binaries, tools written in Go can also be built from source and installed into your Go work‐space via the go install command.</description>
     </item>
     
     <item>
-      <title>Tips: Using String better way in Go</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/go-1-strings-in-go/</link>
+      <title>Golang Tips1: Using String better way in Go</title>
+      <link>https://blogs.decodegeek.co.in/posts/code/001-go-strings-in-go/</link>
       <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/go-1-strings-in-go/</guid>
+      <guid>https://blogs.decodegeek.co.in/posts/code/001-go-strings-in-go/</guid>
       <description>Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it.</description>
     </item>
     

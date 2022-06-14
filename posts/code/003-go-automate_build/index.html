@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    
+    <link rel="canonical" href="https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/">
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.92.1" />
+
+    
+    
+    
+
+<title>Go to Automate and Integrate tools with Build • Learning &amp; Sharing Dev&amp;Ops</title>
+<meta name="description" content="Passing on my learnings about Programming on Go, Operations on Cloud, Microservice, and DevOps Automation, so you don&#39;t have to waste as many hours as I did trying to figure out how to make it work.">
+<meta name="keywords" content="Go, Powershell, Azure, Kubernetes, Docker, Rancher, k3d, Azure DevOps, k3s, Git, Terraform">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go to Automate and Integrate tools with Build"/>
+<meta name="twitter:description" content="1️⃣ Background Modern software development relies on repeatable, automatable builds that can be run by anyone, anywhere, at any time. This avoids the age-old developer excuse of “It works on my machine!"/>
+
+<meta property="og:title" content="Go to Automate and Integrate tools with Build" />
+<meta property="og:description" content="1️⃣ Background Modern software development relies on repeatable, automatable builds that can be run by anyone, anywhere, at any time. This avoids the age-old developer excuse of “It works on my machine!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-06-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-06-14T00:00:00+00:00" /><meta property="og:site_name" content="Decode DevOps" />
+
+
+
+    
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.a0121b785f8f8409e01610009d7ad2f1a9680e3059165909c5cb54221967f160.css" integrity="sha256-oBIbeF&#43;PhAngFhAAnXrS8aloDjBZFlkJxctUIhln8WA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+
+<link rel="stylesheet" href="/scss/hugo-toc.0873834b0f2e9fdc9e1d0301e8ebce21fc10383882a41e9373f29b90e85a9987.css" integrity="sha256-CHODSw8un9yeHQMB6OvOIfwQODiCpB6Tc/KbkOhamYc=">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-223594308-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0X0X36CBCW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0X0X36CBCW');
+</script>
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://blogs.decodegeek.co.in/">
+        
+          Learning &amp; Sharing Dev&amp;Ops
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="https://blogs.decodegeek.co.in/avatar.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+         Knowledge share on Dev, Ops, &amp; Code. 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">Learning &amp; Sharing Dev&amp;Ops</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>About</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/subscribe/">
+						<span>Subscribe</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/viv007s" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	<a href="https://github.com/TechnicalVegeta" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/vivek-s-028b5117" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:technical.blogs@decodegeek.co.in" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2021 - 2022 Vivek Sheshadri
+  
+</div>
+
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Go to Automate and Integrate tools with Build</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Jun 14, 2022
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/golang">GOLANG</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="/tags/programming">programming</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/go">go</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/linting">linting</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/venting">venting</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/golang">golang</a>
+           
+      
+          <a class="badge badge-tag" href="/tags/gotools">gotools</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  
+    <div class="toc-wrapper">
+      <input type="checkbox" id="tocToggle">
+      <label for="tocToggle">Table of Content</label>
+      
+          <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-background">1️⃣ Background</a></li>
+        <li><a href="#2-make---simple-autoamte-build">2️⃣ Make - Simple Autoamte Build</a></li>
+        <li><a href="#3-drawback">3️⃣ Drawback</a></li>
+        <li><a href="#4-conclusion">4️⃣ Conclusion</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      
+    </div>
+  
+  
+  <div class="post">
+    <h3 id="1-background">1️⃣ Background</h3>
+<p>Modern software development relies on repeatable, automatable builds that can be run by anyone, anywhere, at any time.
+This avoids the age-old developer excuse of “It works on my machine!” The way to do this is to use some kind of script to specify your build steps. 
+Go has adopted <em>make</em> as their solution.</p>
+<h3 id="2-make---simple-autoamte-build">2️⃣ Make - Simple Autoamte Build</h3>
+<p>Sample project hello.go file contains below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+
+<span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello, Vivek!&#34;</span>)
+}
+</code></pre></div><p>Here’s a sample Makefile to add to our project:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make">.DEFAULT_GOAL <span style="color:#f92672">:=</span> build
+
+<span style="color:#a6e22e">fmt</span><span style="color:#f92672">:</span>
+		go fmt ./...
+<span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span>fmt 
+
+<span style="color:#a6e22e">lint</span><span style="color:#f92672">:</span> fmt
+		golangci-lint run
+<span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span>lint
+
+<span style="color:#a6e22e">build</span><span style="color:#f92672">:</span> lint
+		go build hello.go 
+<span style="color:#a6e22e">.PHONY</span><span style="color:#f92672">:</span>build
+</code></pre></div><p><strong>Run Makefile</strong> - Once the Makefile is in the Go Project Directory, type:</p>
+<p><strong>make</strong></p>
+<p>This will give the Output:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">go fmt ./...
+hello.go
+golangci-lint run
+go build hello.go
+</code></pre><p><strong>Explanation of Make file configuration:</strong><br>
+it’s not too difficult to figure out what is going on. Each possible operation is called a target. The .DEFAULT_GOAL defines which
+target is run when no target is specified. In our case, we are going to run the build target. Next we have the target definitions. The word before the colon (:) is the name
+of the target. Any words after the target (like <em>lint</em> in the line <em>build: lint</em>) are the other targets that must be run before the specified target runs. The tasks that are
+performed by the target are on the indented lines after the target.</p>
+<p><em>PHONY</em> - By default, Makefile targets are &ldquo;file targets&rdquo; - they are used to build files from other files. Make assumes its target is a file, and this makes writing Makefiles relatively easy
+However, sometimes you want your Makefile to run commands that do not represent physical files in the file system. examples for this are the common targets <em>&ldquo;clean&rdquo;</em> and <em>&ldquo;all&rdquo;</em>. Chances are this isn&rsquo;t the case, but you may potentially have a file named clean in your main directory. In such a case Make will be confused because by default the clean target would be associated with this file and Make will only run it when the file doesn&rsquo;t appear to be up-to-date with regards to its dependencies.</p>
+<p>These special targets are called <em>PHONY</em> and you can explicitly tell Make they&rsquo;re not associated with files, as below example.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#a6e22e">clean</span>: 
+		<span style="color:#a6e22e">rm</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">rf</span> <span style="color:#f92672">*</span>.<span style="color:#a6e22e">txt</span> 
+.<span style="color:#a6e22e">PHONY</span>:<span style="color:#a6e22e">clean</span>
+</code></pre></div><p>Now if you run the command <em>make clean</em> it will run as expected even if you do have a file name called <em>clean</em></p>
+<h3 id="3-drawback">3️⃣ Drawback</h3>
+<p>One drawback to Makefiles is that they are exceedingly picky. You must indent the steps in a target with a tab. They are also not supported out-of-the-box on Windows.
+If you are doing your Go development on a Windows computer like me, you need to installmake first. The easiest way to do so is to first install a package manager like <a href="https://chocolatey.org/">Chocolatey</a> and then use it to install make by running below command from Powershell (run as admininstrator).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">choco install make
+</code></pre></div><h3 id="4-conclusion">4️⃣ Conclusion</h3>
+<p>From the current version of Go, as i observed there has been a new major release roughly every six months. There are also minor releases with bug and security fixes released as needed. 
+Given the rapid development cycles and the Go team’s commitment to backward compatibility, Go releases tend to be incremental rather than expansive and The <a href="https://go.dev/doc/go1compat">Go Compatibility Promise</a> backward compatibility guarantees with minor limitations. which i also belive will not complecate Go for lerners and Developers in future.</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/code/002-go-third-party-go-tools/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Golang Tips2: Using Third-Paty Tools for betterment of Go</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+
+<div class="post__related">
+    
+    <h2>Related Articles</h2>
+    <ul class="related-posts">
+        
+<li>
+  <span class="list__title--small">
+    <a href="/posts/code/002-go-third-party-go-tools/" >Golang Tips2: Using Third-Paty Tools for betterment of Go</a>
+      
+      <time class="pull-right hidden-tablet">Jun 1, 2022</time>
+      
+  </span>
+</li>
+
+<li>
+  <span class="list__title--small">
+    <a href="/posts/code/001-go-strings-in-go/" >Golang Tips1: Using String better way in Go</a>
+      
+      <time class="pull-right hidden-tablet">Mar 18, 2022</time>
+      
+  </span>
+</li>
+
+
+    </ul>
+</div>
+
+
+
+  
+    
+        <div id="graphcomment"></div>
+<script type="text/javascript">
+  window.graphcomment_id = 'Decode-DevOps';
+   
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.src = 'https://graphcomment.com/js/integration.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+</script>
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-223594308-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    
+
+
+
+    </body>
+</html>
