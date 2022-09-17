@@ -289,6 +289,7 @@ As a part of CI build, the pipeline will create a docker image inside the docker
 ▶️ There are three ways to achive it based on our environemt requirements.</p>
 <h3 id="methods-which-i-explored">Methods which i explored</h3>
 <h4 id="method-1---using-dockersock">Method 1 - Using docker.sock</h4>
+<p><img src="/052_Docker/docker.sock.png" alt="docker.sock"></p>
 <p><strong>What is docker.sock ?</strong><br>
 <code>/var/run/docker.sock</code> is the UNIX socket that Docker daemon is listening to. It&rsquo;s the main entry point for Docker API. It also can be TCP socket but by default for security reasons Docker defaults to use UNIX socket. Docker cli client uses this socket to execute docker commands by default. If you are on the same host where Docker daemon is running, you can use the /var/run/docker.sock to manage containers.</p>
 <p>Now to use docker functionality inside docker container, all you are have do is just run the docker container by mounting the <code>docker.sock</code> path as a volume inside the container.</p>
@@ -296,8 +297,9 @@ As a part of CI build, the pipeline will create a docker image inside the docker
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">docker run -v /var/run/docker.sock:/var/run/docker.sock -ti &lt;Imange-Name&gt;
 </code></pre></div><p><strong>Risk Factor</strong></p>
 <p>This approch increases attack surface so you should be careful if you mount docker socket inside a container there are trusted codes running inside that container otherwise you can simply compromise your host that is running docker daemon, since Docker by default launches all containers as root.</p>
-<h4 id="method-2---using-docker-image-with-dind">Method 2 - using Docker image with dind</h4>
-<p><strong>What is DinD Image ?</strong>
+<h4 id="method-2---using-docker-image-with-dind">Method 2 - Using Docker image with dind</h4>
+<p><img src="/052_Docker/DinD.png" alt="DinD">
+<strong>What is DinD Image ?</strong>
 The official docker image with <code>dind</code> tag is know as dind Image, used to run the docker container insinside docker container. This approch is used only to create a docker like environment creating docker image and to run the docker container indside container. If only building the docker image then it is recomended to use the first.</p>
 <p><strong>Requirement</strong><br>
 ▶️ Need official docker image with <code>dind</code> tag.</p>
@@ -307,7 +309,8 @@ The official docker image with <code>dind</code> tag is know as dind Image, used
 This approch requires that the Docker daemon container be configured as a “privileged” container. Running a privileged container reduces isolation between the container and the underlying host and creates security risks, because the init process inside the container runs with the same privileges as the root user on the host.
 It may be a viable (though risky) solution in trusted environments, but it’s not a viable solution in environments where you don’t trust the workloads running inside the DinD container. For this reason, use of DinD is generally not recommended by Docker (even though it’s officially supported).</p>
 <h4 id="method-3---using-sysbox">Method 3 - Using Sysbox</h4>
-<p>In the above two methods we can see the same kind of drawbacks, where we cannot use these approches in production environments because this significantly weakens isolation between the container and the underlying host, posing a strong security risk, but Sysbox is software that installs on the Linux host machine, integrates with Docker and run as System Container.</p>
+<p><img src="/052_Docker/Sysbox.png" alt="Sysbox">
+In the above two methods we can see the same kind of drawbacks, where we cannot use these approches in production environments because this significantly weakens isolation between the container and the underlying host, posing a strong security risk, but Sysbox is software that installs on the Linux host machine, integrates with Docker and run as System Container.</p>
 <p><strong>What is Sysbox ?</strong>
 Sysbox is a open-source container runtime  (&ldquo;runc&rdquo;) developed by Nestybox, which is now aquired by Docker Inc. Within a Nestybox system container you are able to run Docker inside the container easily and securely, with total isolation between the Docker inside the system container and the Docker on the host. No need for privileged containers anymore.</p>
 <p>For more Info refer -  <a href="https://www.nestybox.com/">link to nestybox</a></p>
