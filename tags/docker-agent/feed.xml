@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kubernetes on Learning &amp; Sharing Dev&amp;Ops</title>
-    <link>https://blogs.decodegeek.co.in/tags/kubernetes/</link>
-    <description>Recent content in kubernetes on Learning &amp; Sharing Dev&amp;Ops</description>
+    <title>Docker agent on Learning &amp; Sharing Dev&amp;Ops</title>
+    <link>https://blogs.decodegeek.co.in/tags/docker-agent/</link>
+    <description>Recent content in Docker agent on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/tags/kubernetes/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/tags/docker-agent/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running Docker inside Docker</title>
       <link>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</link>
@@ -15,15 +15,6 @@
       <guid>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</guid>
       <description>Background 📃 First let&amp;rsquo;s understand the use cases to run docker inside a docker container.
 Generally we build docker images in a VM which is a common approch. but recently, I was trying to create a Docker-based dynamic container as agent for the TeamCity Server, As a part of CI build, the pipeline will create a docker image inside the docker agent which i have integrated with the TeamCity Server.</description>
-    </item>
-    
-    <item>
-      <title>Setup Prod-Grade kubernets in your local</title>
-      <link>https://blogs.decodegeek.co.in/posts/infra/051-k8s-prod-grade-k8s-inlocal/</link>
-      <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blogs.decodegeek.co.in/posts/infra/051-k8s-prod-grade-k8s-inlocal/</guid>
-      <description>Background 📃 k8s</description>
     </item>
     
   </channel>
