@@ -2,73 +2,73 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Learning &amp; Sharing Dev&amp;Ops</title>
-    <link>https://blogs.decodegeek.co.in/</link>
+    <link>https://technicalvegeta.github.io/</link>
     <description>Recent content on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://technicalvegeta.github.io/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://blogs.decodegeek.co.in/about/</link>
+      <link>https://technicalvegeta.github.io/about/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/about/</guid>
+      <guid>https://technicalvegeta.github.io/about/</guid>
       <description>My name is Vivek and I currently live in Bengaluru working as a DevOps Consultant. In my own time and at work, I do some of the below:
  Write code [PowerShell, Python, Go, Terraform].</description>
     </item>
     
     <item>
       <title>Subscribe</title>
-      <link>https://blogs.decodegeek.co.in/subscribe/</link>
+      <link>https://technicalvegeta.github.io/subscribe/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/subscribe/</guid>
+      <guid>https://technicalvegeta.github.io/subscribe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Running Docker inside Docker</title>
-      <link>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</link>
+      <link>https://technicalvegeta.github.io/posts/infra/052-docker-in-docker/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</guid>
+      <guid>https://technicalvegeta.github.io/posts/infra/052-docker-in-docker/</guid>
       <description>Background 📃 First let&amp;rsquo;s understand the use cases to run docker inside a docker container.
 Generally we build docker images in a VM which is a common approch. but recently, I was trying to create a Docker-based dynamic container as agent for the TeamCity Server, As a part of CI build, the pipeline will create a docker image inside the docker agent which i have integrated with the TeamCity Server.</description>
     </item>
     
     <item>
       <title>Go to Automate and Integrate tools with Build</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</link>
+      <link>https://technicalvegeta.github.io/posts/code/003-go-automate_build/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</guid>
+      <guid>https://technicalvegeta.github.io/posts/code/003-go-automate_build/</guid>
       <description>1️⃣ Background Modern software development relies on repeatable, automatable builds that can be run by anyone, anywhere, at any time. This avoids the age-old developer excuse of “It works on my machine!</description>
     </item>
     
     <item>
       <title>Golang Tips2: Using Third-Paty Tools for betterment of Go</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</link>
+      <link>https://technicalvegeta.github.io/posts/code/002-go-third-party-go-tools/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</guid>
+      <guid>https://technicalvegeta.github.io/posts/code/002-go-third-party-go-tools/</guid>
       <description>1️⃣ Background While some people choose to distribute their Go programs as pre-compiled binaries, tools written in Go can also be built from source and installed into your Go work‐space via the go install command.</description>
     </item>
     
     <item>
       <title>Setup Prod-Grade kubernets in your local</title>
-      <link>https://blogs.decodegeek.co.in/posts/infra/051-k8s-prod-grade-k8s-inlocal/</link>
+      <link>https://technicalvegeta.github.io/posts/infra/051-k8s-prod-grade-k8s-inlocal/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/infra/051-k8s-prod-grade-k8s-inlocal/</guid>
+      <guid>https://technicalvegeta.github.io/posts/infra/051-k8s-prod-grade-k8s-inlocal/</guid>
       <description>Background 📃 k8s</description>
     </item>
     
     <item>
       <title>Golang Tips1: Using String better way in Go</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/001-go-strings-in-go/</link>
+      <link>https://technicalvegeta.github.io/posts/code/001-go-strings-in-go/</link>
       <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/001-go-strings-in-go/</guid>
+      <guid>https://technicalvegeta.github.io/posts/code/001-go-strings-in-go/</guid>
       <description>Background 🧐 Go includes strings as a builtin type. The zero value for a string is the empty string. Go supports Unicode; Strings in Go are immutable; you can reassign the value of a string variable, but you cannot change the value of the string that is assigned to it.</description>
     </item>
     

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on Learning &amp; Sharing Dev&amp;Ops</title>
-    <link>https://blogs.decodegeek.co.in/categories/docker/</link>
+    <link>https://technicalvegeta.github.io/categories/docker/</link>
     <description>Recent content in Docker on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/categories/docker/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://technicalvegeta.github.io/categories/docker/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running Docker inside Docker</title>
-      <link>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</link>
+      <link>https://technicalvegeta.github.io/posts/infra/052-docker-in-docker/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</guid>
+      <guid>https://technicalvegeta.github.io/posts/infra/052-docker-in-docker/</guid>
       <description>Background 📃 First let&amp;rsquo;s understand the use cases to run docker inside a docker container.
 Generally we build docker images in a VM which is a common approch. but recently, I was trying to create a Docker-based dynamic container as agent for the TeamCity Server, As a part of CI build, the pipeline will create a docker image inside the docker agent which i have integrated with the TeamCity Server.</description>
     </item>

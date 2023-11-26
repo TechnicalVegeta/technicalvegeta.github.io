@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Learning &amp; Sharing Dev&amp;Ops</title>
-    <link>https://blogs.decodegeek.co.in/tags/</link>
+    <link>https://technicalvegeta.github.io/tags/</link>
     <description>Recent content in Tags on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/tags/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 17 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://technicalvegeta.github.io/tags/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>containerisation</title>
-      <link>https://blogs.decodegeek.co.in/tags/containerisation/</link>
+      <link>https://technicalvegeta.github.io/tags/containerisation/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/containerisation/</guid>
+      <guid>https://technicalvegeta.github.io/tags/containerisation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://blogs.decodegeek.co.in/tags/docker/</link>
+      <link>https://technicalvegeta.github.io/tags/docker/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/docker/</guid>
+      <guid>https://technicalvegeta.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker agent</title>
-      <link>https://blogs.decodegeek.co.in/tags/docker-agent/</link>
+      <link>https://technicalvegeta.github.io/tags/docker-agent/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/docker-agent/</guid>
+      <guid>https://technicalvegeta.github.io/tags/docker-agent/</guid>
       <description></description>
     </item>
     
     <item>
       <title>kubernetes</title>
-      <link>https://blogs.decodegeek.co.in/tags/kubernetes/</link>
+      <link>https://technicalvegeta.github.io/tags/kubernetes/</link>
       <pubDate>Sat, 17 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/kubernetes/</guid>
+      <guid>https://technicalvegeta.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>go</title>
-      <link>https://blogs.decodegeek.co.in/tags/go/</link>
+      <link>https://technicalvegeta.github.io/tags/go/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/go/</guid>
+      <guid>https://technicalvegeta.github.io/tags/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://blogs.decodegeek.co.in/tags/golang/</link>
+      <link>https://technicalvegeta.github.io/tags/golang/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/golang/</guid>
+      <guid>https://technicalvegeta.github.io/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gotools</title>
-      <link>https://blogs.decodegeek.co.in/tags/gotools/</link>
+      <link>https://technicalvegeta.github.io/tags/gotools/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/gotools/</guid>
+      <guid>https://technicalvegeta.github.io/tags/gotools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linting</title>
-      <link>https://blogs.decodegeek.co.in/tags/linting/</link>
+      <link>https://technicalvegeta.github.io/tags/linting/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/linting/</guid>
+      <guid>https://technicalvegeta.github.io/tags/linting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>programming</title>
-      <link>https://blogs.decodegeek.co.in/tags/programming/</link>
+      <link>https://technicalvegeta.github.io/tags/programming/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/programming/</guid>
+      <guid>https://technicalvegeta.github.io/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Venting</title>
-      <link>https://blogs.decodegeek.co.in/tags/venting/</link>
+      <link>https://technicalvegeta.github.io/tags/venting/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/venting/</guid>
+      <guid>https://technicalvegeta.github.io/tags/venting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k3d</title>
-      <link>https://blogs.decodegeek.co.in/tags/k3d/</link>
+      <link>https://technicalvegeta.github.io/tags/k3d/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/k3d/</guid>
+      <guid>https://technicalvegeta.github.io/tags/k3d/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k3s</title>
-      <link>https://blogs.decodegeek.co.in/tags/k3s/</link>
+      <link>https://technicalvegeta.github.io/tags/k3s/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/k3s/</guid>
+      <guid>https://technicalvegeta.github.io/tags/k3s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>https://blogs.decodegeek.co.in/tags/k8s/</link>
+      <link>https://technicalvegeta.github.io/tags/k8s/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/k8s/</guid>
+      <guid>https://technicalvegeta.github.io/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>production k3d</title>
-      <link>https://blogs.decodegeek.co.in/tags/production-k3d/</link>
+      <link>https://technicalvegeta.github.io/tags/production-k3d/</link>
       <pubDate>Sat, 19 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/production-k3d/</guid>
+      <guid>https://technicalvegeta.github.io/tags/production-k3d/</guid>
       <description></description>
     </item>
     
     <item>
       <title>strings</title>
-      <link>https://blogs.decodegeek.co.in/tags/strings/</link>
+      <link>https://technicalvegeta.github.io/tags/strings/</link>
       <pubDate>Fri, 18 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/tags/strings/</guid>
+      <guid>https://technicalvegeta.github.io/tags/strings/</guid>
       <description></description>
     </item>
     

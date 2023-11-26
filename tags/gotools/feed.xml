@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gotools on Learning &amp; Sharing Dev&amp;Ops</title>
-    <link>https://blogs.decodegeek.co.in/tags/gotools/</link>
+    <link>https://technicalvegeta.github.io/tags/gotools/</link>
     <description>Recent content in gotools on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/tags/gotools/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://technicalvegeta.github.io/tags/gotools/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Go to Automate and Integrate tools with Build</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</link>
+      <link>https://technicalvegeta.github.io/posts/code/003-go-automate_build/</link>
       <pubDate>Tue, 14 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</guid>
+      <guid>https://technicalvegeta.github.io/posts/code/003-go-automate_build/</guid>
       <description>1️⃣ Background Modern software development relies on repeatable, automatable builds that can be run by anyone, anywhere, at any time. This avoids the age-old developer excuse of “It works on my machine!</description>
     </item>
     
     <item>
       <title>Golang Tips2: Using Third-Paty Tools for betterment of Go</title>
-      <link>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</link>
+      <link>https://technicalvegeta.github.io/posts/code/002-go-third-party-go-tools/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</guid>
+      <guid>https://technicalvegeta.github.io/posts/code/002-go-third-party-go-tools/</guid>
       <description>1️⃣ Background While some people choose to distribute their Go programs as pre-compiled binaries, tools written in Go can also be built from source and installed into your Go work‐space via the go install command.</description>
     </item>
     

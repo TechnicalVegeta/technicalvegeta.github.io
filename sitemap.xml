@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blogs.decodegeek.co.in/about/</loc>
+    <loc>https://technicalvegeta.github.io/about/</loc>
     <lastmod>2021-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/subscribe/</loc>
+    <loc>https://technicalvegeta.github.io/subscribe/</loc>
     <lastmod>2021-11-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/categories/</loc>
+    <loc>https://technicalvegeta.github.io/categories/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/containerisation/</loc>
+    <loc>https://technicalvegeta.github.io/tags/containerisation/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/docker/</loc>
+    <loc>https://technicalvegeta.github.io/tags/docker/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/categories/docker/</loc>
+    <loc>https://technicalvegeta.github.io/categories/docker/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/docker-agent/</loc>
+    <loc>https://technicalvegeta.github.io/tags/docker-agent/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/kubernetes/</loc>
+    <loc>https://technicalvegeta.github.io/tags/kubernetes/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/</loc>
+    <loc>https://technicalvegeta.github.io/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/</loc>
+    <loc>https://technicalvegeta.github.io/posts/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/infra/052-docker-in-docker/</loc>
+    <loc>https://technicalvegeta.github.io/posts/infra/052-docker-in-docker/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/</loc>
+    <loc>https://technicalvegeta.github.io/tags/</loc>
     <lastmod>2022-09-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/go/</loc>
+    <loc>https://technicalvegeta.github.io/tags/go/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/code/003-go-automate_build/</loc>
+    <loc>https://technicalvegeta.github.io/posts/code/003-go-automate_build/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/categories/golang/</loc>
+    <loc>https://technicalvegeta.github.io/categories/golang/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/golang/</loc>
+    <loc>https://technicalvegeta.github.io/tags/golang/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/gotools/</loc>
+    <loc>https://technicalvegeta.github.io/tags/gotools/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/linting/</loc>
+    <loc>https://technicalvegeta.github.io/tags/linting/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/programming/</loc>
+    <loc>https://technicalvegeta.github.io/tags/programming/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/venting/</loc>
+    <loc>https://technicalvegeta.github.io/tags/venting/</loc>
     <lastmod>2022-06-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/code/002-go-third-party-go-tools/</loc>
+    <loc>https://technicalvegeta.github.io/posts/code/002-go-third-party-go-tools/</loc>
     <lastmod>2022-06-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/k3d/</loc>
+    <loc>https://technicalvegeta.github.io/tags/k3d/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/k3s/</loc>
+    <loc>https://technicalvegeta.github.io/tags/k3s/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/k8s/</loc>
+    <loc>https://technicalvegeta.github.io/tags/k8s/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/categories/kubernetes/</loc>
+    <loc>https://technicalvegeta.github.io/categories/kubernetes/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/production-k3d/</loc>
+    <loc>https://technicalvegeta.github.io/tags/production-k3d/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/infra/051-k8s-prod-grade-k8s-inlocal/</loc>
+    <loc>https://technicalvegeta.github.io/posts/infra/051-k8s-prod-grade-k8s-inlocal/</loc>
     <lastmod>2022-03-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/posts/code/001-go-strings-in-go/</loc>
+    <loc>https://technicalvegeta.github.io/posts/code/001-go-strings-in-go/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/tags/strings/</loc>
+    <loc>https://technicalvegeta.github.io/tags/strings/</loc>
     <lastmod>2022-03-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blogs.decodegeek.co.in/fixed/</loc>
+    <loc>https://technicalvegeta.github.io/fixed/</loc>
     <lastmod>2021-11-18T00:00:00+00:00</lastmod>
   </url>
 </urlset>

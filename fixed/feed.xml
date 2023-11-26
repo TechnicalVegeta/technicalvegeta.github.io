@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fixeds on Learning &amp; Sharing Dev&amp;Ops</title>
-    <link>https://blogs.decodegeek.co.in/fixed/</link>
+    <link>https://technicalvegeta.github.io/fixed/</link>
     <description>Recent content in Fixeds on Learning &amp; Sharing Dev&amp;Ops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://blogs.decodegeek.co.in/fixed/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://technicalvegeta.github.io/fixed/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://blogs.decodegeek.co.in/about/</link>
+      <link>https://technicalvegeta.github.io/about/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/about/</guid>
+      <guid>https://technicalvegeta.github.io/about/</guid>
       <description>My name is Vivek and I currently live in Bengaluru working as a DevOps Consultant. In my own time and at work, I do some of the below:
  Write code [PowerShell, Python, Go, Terraform].</description>
     </item>
     
     <item>
       <title>Subscribe</title>
-      <link>https://blogs.decodegeek.co.in/subscribe/</link>
+      <link>https://technicalvegeta.github.io/subscribe/</link>
       <pubDate>Thu, 18 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blogs.decodegeek.co.in/subscribe/</guid>
+      <guid>https://technicalvegeta.github.io/subscribe/</guid>
       <description></description>
     </item>
     
